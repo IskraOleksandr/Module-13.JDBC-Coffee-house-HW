@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS public.staff_work_schedule
 (
     id SERIAL PRIMARY KEY,
     staff_id integer,
+    staff_name varchar(30),
     day_of_week varchar(30),
     start_time time,
     end_time time,

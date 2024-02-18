@@ -4,32 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da05292a-6a79-4877-81bf-5117dca4f6d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CreateTables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/brainacad_org/AppTest.java" afterDir="false" />
+    <list default="true" id="da05292a-6a79-4877-81bf-5117dca4f6d9" name="Changes" comment="Первый документ задание Кофейня JDBC(база данных)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/CRUDInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/ConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/cafeassortmentDAO/CafeAssortmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/cafeassortmentDAO/CafeAssortmentImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/clientsDAO/ClientsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/clientsDAO/ClientsDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/staffDAO/StaffDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/dao/staffDAO/StaffDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/exception/ConnectionDBException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/exception/FileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/exception/PropertyFileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuAdding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuDeleting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuEditing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/menu/MenuShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/model/CafeAssortment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/model/Clients.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/model/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/model/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/model/StaffWorkSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/CoffeeHouseDbInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/CoffeeHouseInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/PropertyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/PropertyReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/TxtFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/exception/ConnectionDBException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/exception/FileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/brainacad_org/service/exception/PropertyFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/brainacad_org/Ex5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/CreateTables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/CreateTables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/brainacad_org/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/brainacad_org/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IskraOleksandr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e2b5abe7-f2df-47b3-8734-8045a562bdec" />
+        <option name="url" value="https://github.com/IskraOleksandr/Module-13.JDBC-Coffee-house-HW" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -45,12 +99,14 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Module-13.JDBC-Coffee-house-HW-2.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java repos/Module 13.JDBC Coffee house HW/src/main/java/brainacad_org/dao/ordersDAO&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -60,7 +116,15 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java repos\Module 13.JDBC Coffee house HW\src\main\java\brainacad_org\dao\ordersDAO" />
+      <recent name="D:\Java repos\Module 13.JDBC Coffee house HW\src\main\java\brainacad_org\dao" />
+      <recent name="D:\Java repos\Module 13.JDBC Coffee house HW\src\main\java\brainacad_org" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="brainacad_org.menu" />
+      <recent name="brainacad_org.model" />
+      <recent name="brainacad_org.dao.staffDAO" />
       <recent name="brainacad_org" />
     </key>
   </component>
@@ -80,11 +144,35 @@
       <workItem from="1706473458206" duration="271000" />
       <workItem from="1706618524927" duration="14100000" />
       <workItem from="1706978402950" duration="2531000" />
-      <workItem from="1707048390645" duration="8344000" />
+      <workItem from="1707048390645" duration="9346000" />
+      <workItem from="1707229312752" duration="7270000" />
+      <workItem from="1707330215583" duration="68000" />
+      <workItem from="1707400237286" duration="571000" />
+      <workItem from="1707402391486" duration="13775000" />
+      <workItem from="1707419828074" duration="335000" />
+      <workItem from="1707478209968" duration="12652000" />
+      <workItem from="1707652379705" duration="6633000" />
+      <workItem from="1707665596462" duration="11492000" />
+      <workItem from="1707913914972" duration="9730000" />
+      <workItem from="1708016429552" duration="11195000" />
+      <workItem from="1708250436148" duration="16911000" />
     </task>
+    <task id="LOCAL-00001" summary="Первый документ задание Кофейня JDBC(база данных)">
+      <option name="closed" value="true" />
+      <created>1707061509165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707061509165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Первый документ задание Кофейня JDBC(база данных)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Первый документ задание Кофейня JDBC(база данных)" />
   </component>
 </project>
